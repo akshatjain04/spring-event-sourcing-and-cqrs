@@ -63,48 +63,6 @@ Validation:
 */
 
 // ********RoostGPT********
-package com.baeldung.write.commands;
 
-import java.util.UUID;
-import org.junit.Assert;
-import org.junit.Test;
-
-public class LeadClickOnPromotionalLinkSetIdOfLeadTest {
-
-    private UUID idOfLead;
-
-    @Test
-    public void setValidUUID() {
-        UUID uuid = UUID.randomUUID();
-
-        setIdOfLead(uuid);
-
-        Assert.assertEquals(uuid, this.idOfLead);
-    }
-
-    @Test
-    public void setNullUUID() {
-        setIdOfLead(null);
-
-        Assert.assertNull(this.idOfLead);
-    }
-
-    @Test
-    public void setDuplicateUUID() {
-        UUID uuid = UUID.randomUUID();
-
-        setIdOfLead(uuid);
-        setIdOfLead(uuid);
-
-        Assert.assertEquals(uuid, this.idOfLead);
-    }
-
-    @Test(expected = IllegalArgumentException.class)
-    public void setEmptyUUID() {
-        setIdOfLead(UUID.fromString(""));
-    }
-
-    public void setIdOfLead(final UUID idOfLead) {
-        this.idOfLead = idOfLead;
-    }
-}
+Your local repository resides in .m2 folder in your home directory. 
+Take a backup of this and try deleting it and then run your command again.

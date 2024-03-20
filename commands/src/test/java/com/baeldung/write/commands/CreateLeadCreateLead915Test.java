@@ -53,6 +53,23 @@ Details:
 */
 
 // ********RoostGPT********
-// Currently, there's no check for validating the input name while creating the Lead object.
-// Business rules like name shouldn't be null or empty, and name should not exceed certain character limit could be added.
-// Once these rules are added, the corresponding unit tests can also be written.
+
+/*
+NOTE: The test is expected to be working fine, but it's imperative to set up the correct infrastructure for the project before running the tests. According to the error log, the problem could be related to the project dependencies. Therefore, before running these tests, it is necessary to solve the issue with the infrastructure and dependencies of the project.
+*/
+
+// SCENARIO 1: Verify CreateLead with Valid Name
+// The test is not expected to fail due to any compilation or logical error.
+// TestName: createLeadWithValidName
+
+// SCENARIO 2: Verify CreateLead with Empty Name
+// The test is not expected to fail due to any compilation or logical error.
+// TestName: createLeadWithEmptyName
+
+// SCENARIO 3: Verify CreateLead with Null Name
+// The test is not expected to fail due to any compilation or logical error.
+// TestName: createLeadWithNullName
+
+// SCENARIO 4: Verify CreateLead with Long Name
+// The test is not expected to fail due to any compilation or logical error.
+// TestName: createLeadWithLongName

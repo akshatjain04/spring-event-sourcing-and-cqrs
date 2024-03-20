@@ -53,6 +53,7 @@ Solution: Improve the hash function by incorporating more fields of the object i
 */
 
 // ********RoostGPT********
+
 package com.baeldung.write.commands;
 
 import java.util.UUID;
@@ -61,6 +62,8 @@ import org.junit.Test;
 
 public class LeadClickOnPromotinalLinkHashCodeTest {
 
+    //Prerequisite: Please ensure the correct setup of project build environment and dependencies on your local machine in order to pass these tests successfully.
+    
     private UUID idOfLead;
 
     public UUID getIdOfLead() {

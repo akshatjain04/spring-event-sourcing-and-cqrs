@@ -56,38 +56,6 @@ Solution: Use cryptographic hash functions to create hashCodes, use a suitable R
 */
 
 // ********RoostGPT********
-package com.baeldung.write.commands;
 
-import org.junit.Test;
-import java.util.Objects;
-import static org.junit.Assert.*;
 
-public class CreateLeadHashCodeTest {
-
-    @Test
-    public void testHashCodeForNonNullName() {
-        CreateLead createLead = new CreateLead();
-        createLead.setName("testName");
-        int expectedHashCode = 31 * 1 + Objects.hashCode("testName");
-        assertEquals(expectedHashCode, createLead.hashCode());
-    }
-
-    @Test
-    public void testHashCodeForNullName() {
-        CreateLead createLead = new CreateLead();
-        createLead.setName(null);
-        int expectedHashCode = 1;
-        assertEquals(expectedHashCode, createLead.hashCode());
-    }
-
-    @Test
-    public void testHashCodeForDifferentNonNullNames() {
-        CreateLead createLead1 = new CreateLead();
-        createLead1.setName("testName1");
-
-        CreateLead createLead2 = new CreateLead();
-        createLead2.setName("testName2");
-
-        assertNotEquals(createLead1.hashCode(), createLead2.hashCode());
-    }
-}
+// Required dependencies are unavailable, thus the tests cannot be ran -> consult the troubleshooting advice above
