@@ -70,7 +70,7 @@ Solution: Avoid deserialization of untrusted data. If that cannot be avoided, ma
 // ********RoostGPT********
 package com.baeldung.write.commands;
 
-import com.baeldung.infra.command.Command;
+ import com.baeldung.infra.command.Command;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

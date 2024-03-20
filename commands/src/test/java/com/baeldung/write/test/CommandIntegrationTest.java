@@ -11,8 +11,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.baeldung.store.events.LeadCreated;
-import com.baeldung.store.spring.EventsConfig;
+ import com.baeldung.store.events.LeadCreated;  
+ import com.baeldung.store.spring.EventsConfig;
 import com.baeldung.write.spring.CommandsApp;
 
 @RunWith(SpringRunner.class)
@@ -26,7 +26,7 @@ public class CommandIntegrationTest {
 
     @Test
     public final void whenPublishingLeadCreatedEvent_thenCorrect() {
-        eventPublisher.publishEvent(new LeadCreated(UUID.randomUUID(), UUID.randomUUID(), randomAlphabetic(8)));
+         eventPublisher.publishEvent(new LeadCreated(UUID.randomUUID(), UUID.randomUUID(), randomAlphabetic(8)));
     }
 
 }
