@@ -1,54 +1,84 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-
-	<artifactId>spring-leads-infra</artifactId>
-	<packaging>jar</packaging>
-
-	<name>spring-leads-infra</name>
-
-	<parent>
-		<groupId>com.baeldung</groupId>
-		<artifactId>spring-leads</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
-	</parent>
-
-	<dependencies>
-
-		<!-- persistence -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.postgresql</groupId>
-			<artifactId>postgresql</artifactId>
-			<version>9.4.1208</version>
-			<scope>runtime</scope>
-		</dependency>
-		
-		<!-- marshalling -->
-		<dependency>
-			<groupId>com.fasterxml.jackson.core</groupId>
-			<artifactId>jackson-databind</artifactId>
-		</dependency>
-
-		<!-- util -->
-		<dependency>
-			<groupId>com.google.guava</groupId>
-			<artifactId>guava</artifactId>
-			<version>19.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.commons</groupId>
-			<artifactId>commons-lang3</artifactId>
-			<version>3.4</version>
-		</dependency>
-
-	</dependencies>
-
-	<properties>
-	</properties>
-
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>spring-leads-infra</artifactId>
+  <packaging>jar</packaging>
+  <name>spring-leads-infra</name>
+  <parent>
+    <groupId>com.baeldung</groupId>
+    <artifactId>spring-leads</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <dependencies>
+    <!-- persistence -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-data-jpa</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.postgresql</groupId>
+      <artifactId>postgresql</artifactId>
+      <version>9.4.1208</version>
+      <scope>runtime</scope>
+    </dependency>
+    <!-- marshalling -->
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+    </dependency>
+    <!-- util -->
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+      <version>19.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>3.4</version>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-api</artifactId>
+      <version>5.7.0</version>
+      <scope>test</scope>
+      <!--Dependency added by RoostGPT-->
+    </dependency>
+    <dependency>
+      <groupId>javax.annotation</groupId>
+      <artifactId>javax.annotation-api</artifactId>
+      <version>1.3.2</version>
+      <scope>compile</scope>
+      <!--Dependency added by RoostGPT-->
+    </dependency>
+    <dependency>
+      <groupId>javax.persistence</groupId>
+      <artifactId>javax.persistence-api</artifactId>
+      <version>2.2</version>
+      <scope>compile</scope>
+      <!--Dependency added by RoostGPT-->
+    </dependency>
+    <dependency>
+      <groupId>java.time</groupId>
+      <artifactId>OffsetDateTime</artifactId>
+      <version>1.0.0</version>
+      <scope>compile</scope>
+      <!--Dependency added by RoostGPT-->
+    </dependency>
+    <dependency>
+      <groupId>java.util</groupId>
+      <artifactId>UUID</artifactId>
+      <version>1.0.0</version>
+      <scope>compile</scope>
+      <!--Dependency added by RoostGPT-->
+    </dependency>
+    <dependency>
+      <groupId>java.io</groupId>
+      <artifactId>Serializable</artifactId>
+      <version>1.0.0</version>
+      <scope>compile</scope>
+      <!--Dependency added by RoostGPT-->
+    </dependency>
+  </dependencies>
+  <properties/>
 </project>
