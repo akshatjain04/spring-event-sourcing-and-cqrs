@@ -1,0 +1,5 @@
+com/baeldung/infra/persistence/event/RawEvent.class
+com/baeldung/infra/event/BaseEvent.class
+com/baeldung/infra/projection/AbstractProjectionPoller.class
+com/baeldung/infra/command/Command.class
+com/baeldung/store/repo/RawEventRepo.class

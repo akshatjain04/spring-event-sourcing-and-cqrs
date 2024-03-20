@@ -1,0 +1,5 @@
+/var/tmp/Roost/RoostGPT/spring-event-sourcing-and-cqrs-test/3d296270-5fb7-42b9-a628-21a0a7675d61/source/spring-event-sourcing-and-cqrs/infra/src/main/java/com/baeldung/infra/persistence/event/RawEvent.java
+/var/tmp/Roost/RoostGPT/spring-event-sourcing-and-cqrs-test/3d296270-5fb7-42b9-a628-21a0a7675d61/source/spring-event-sourcing-and-cqrs/infra/src/main/java/com/baeldung/infra/projection/AbstractProjectionPoller.java
+/var/tmp/Roost/RoostGPT/spring-event-sourcing-and-cqrs-test/3d296270-5fb7-42b9-a628-21a0a7675d61/source/spring-event-sourcing-and-cqrs/infra/src/main/java/com/baeldung/infra/event/BaseEvent.java
+/var/tmp/Roost/RoostGPT/spring-event-sourcing-and-cqrs-test/3d296270-5fb7-42b9-a628-21a0a7675d61/source/spring-event-sourcing-and-cqrs/infra/src/main/java/com/baeldung/store/repo/RawEventRepo.java
+/var/tmp/Roost/RoostGPT/spring-event-sourcing-and-cqrs-test/3d296270-5fb7-42b9-a628-21a0a7675d61/source/spring-event-sourcing-and-cqrs/infra/src/main/java/com/baeldung/infra/command/Command.java
