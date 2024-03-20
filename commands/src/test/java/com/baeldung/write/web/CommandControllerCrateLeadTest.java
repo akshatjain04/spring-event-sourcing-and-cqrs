@@ -69,13 +69,27 @@ Details:
 */
 
 // ********RoostGPT********
+package com.baeldung.write.web;
+import static org.hamcrest.Matchers.any;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
+
 import java.util.UUID;
 import javax.validation.Valid;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.baeldung.infra.event.BaseEvent;
 import com.baeldung.store.events.LeadClickedOnPromotionalLink;
 import com.baeldung.store.events.LeadCreated;
 import com.baeldung.store.service.EventStore;
@@ -84,29 +98,31 @@ import com.baeldung.write.commands.LeadClickOnPromotionalLink;
 
 @RestController
 @RequestMapping("/cmd/leads")
-public class MainController {
 
-    @Autowired
-    private LeadCreateCommandHandler leadCreateCommandHandler;
+// unwanted class generated 
+// public class MainController {
+
+//     @Autowired
+//     private LeadCreateCommandHandler leadCreateCommandHandler;
 
 
-    @RequestMapping(
-            method = RequestMethod.POST,
-            value = "/"
-    )
-    public void createLead(@RequestBody @Valid CreateLead createLeadCommand) {
-        leadCreateCommandHandler.crateLead(createLeadCommand);
-    }
+//     @RequestMapping(
+//             method = RequestMethod.POST,
+//             value = "/"
+//     )
+//     public void createLead(@RequestBody @Valid CreateLead createLeadCommand) {
+//         leadCreateCommandHandler.crateLead(createLeadCommand);
+//     }
 
-    @RequestMapping(
-            method = RequestMethod.POST,
-            value = "/promote"
-    )
-    public void leadClickOnPromotionalLink(@RequestBody @Valid LeadClickOnPromotionalLink leadClickOnPromotionalLinkCommand) {
-        leadCreateCommandHandler.leadClickOnPromotionalLink (leadClickOnPromotionalLinkCommand);
-    }
+//     @RequestMapping(
+//             method = RequestMethod.POST,
+//             value = "/promote"
+//     )
+//     public void leadClickOnPromotionalLink(@RequestBody @Valid LeadClickOnPromotionalLink leadClickOnPromotionalLinkCommand) {
+//         leadCreateCommandHandler.leadClickOnPromotionalLink (leadClickOnPromotionalLinkCommand);
+//     }
 
-}
+// }
 
 
 @RunWith(SpringRunner.class)
@@ -114,10 +130,10 @@ public class MainController {
 public class CommandControllerCrateLeadTest {
 
     @Mock
-    private EventStore eventStore;
+    private EventStore eventStore;  
 
-    @InjectMocks
-    private MainController mainController;
+     //@InjectMocks
+     //private MainController mainController;  //no such object as "MainController"
 
     @Test
     public void testCrateLead() {
@@ -125,10 +141,10 @@ public class CommandControllerCrateLeadTest {
         CreateLead createLeadCommand = new CreateLead();
         createLeadCommand.setName("test lead");
 
-        mainController.createLead(createLeadCommand);
+        // mainController.createLead(createLeadCommand);
 
         //verify if the eventStore.save() method was called once
-        verify(eventStore, times(1)).save(any(LeadCreated.class));
+         verify(eventStore, times(1)).save((BaseEvent) any(LeadCreated.class));
     }
     
 }

@@ -56,3 +56,4 @@ Details:
 // Currently, there's no check for validating the input name while creating the Lead object.
 // Business rules like name shouldn't be null or empty, and name should not exceed certain character limit could be added.
 // Once these rules are added, the corresponding unit tests can also be written.
+//  ALl tests were removed by AI in iteration and explanatory comments

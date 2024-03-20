@@ -60,11 +60,16 @@ Details:
 */
 
 // ********RoostGPT********
+package com.baeldung.write.commands; 
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+
 import java.util.UUID;
-import com.baeldung.infra.command.Command;
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
+
+import org.junit.Test;  // since input test famework was junit4
+
+ import com.baeldung.infra.command.Command;
 
 public class LeadClickOnPromotionalLinkGetIdOfLeadTest {
 
