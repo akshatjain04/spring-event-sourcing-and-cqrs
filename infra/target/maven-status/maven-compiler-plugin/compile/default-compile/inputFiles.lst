@@ -1,0 +1,5 @@
+C:\var\tmp\Roost\RoostGPT\MiniProjects\1711689810\source\spring-event-sourcing-and-cqrs\infra\src\main\java\com\baeldung\infra\event\BaseEvent.java
+C:\var\tmp\Roost\RoostGPT\MiniProjects\1711689810\source\spring-event-sourcing-and-cqrs\infra\src\main\java\com\baeldung\infra\persistence\event\RawEvent.java
+C:\var\tmp\Roost\RoostGPT\MiniProjects\1711689810\source\spring-event-sourcing-and-cqrs\infra\src\main\java\com\baeldung\infra\projection\AbstractProjectionPoller.java
+C:\var\tmp\Roost\RoostGPT\MiniProjects\1711689810\source\spring-event-sourcing-and-cqrs\infra\src\main\java\com\baeldung\store\repo\RawEventRepo.java
+C:\var\tmp\Roost\RoostGPT\MiniProjects\1711689810\source\spring-event-sourcing-and-cqrs\infra\src\main\java\com\baeldung\infra\command\Command.java
