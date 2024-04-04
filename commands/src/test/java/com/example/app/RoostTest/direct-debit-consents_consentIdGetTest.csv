@@ -1,0 +1,11 @@
+consentId^|^AdditionalCSVvaluInfo^|^Authorization^|^x-fapi-auth-date^|^x-fapi-customer-ip-address^|^x-fapi-interaction-id^|^Accept-Language^|^statusCode
+cns12345^|^169.254.169.254^|^Bearer eyJhbGciOiJIUzI1^|^2023-04-01T10:00:00Z^|^192.168.1.1^|^fapi1234567890^|^en-HK^|^200
+cns12346^|^169.254.169.254^|^Bearer eyJhbGciOiJIUzI2^|^2023-04-01T10:05:00Z^|^192.168.1.2^|^fapi1234567891^|^zh-HK^|^401
+cns12347^|^169.254.169.254^|^Bearer eyJhbGciOiJIUzI3^|^2023-04-01T10:10:00Z^|^192.168.1.3^|^fapi1234567892^|^zh-CN^|^403
+cns12348^|^169.254.169.254^|^Bearer eyJhbGciOiJIUzI4^|^2023-04-01T10:15:00Z^|^192.168.1.4^|^fapi1234567893^|^en-HK^|^405
+cns12349^|^169.254.169.254^|^Bearer eyJhbGciOiJIUzI5^|^2023-04-01T10:20:00Z^|^192.168.1.5^|^fapi1234567894^|^zh-HK^|^406
+cns12350^|^169.254.169.254^|^Bearer eyJhbGciOiJIUzI0^|^2023-04-01T10:25:00Z^|^192.168.1.6^|^fapi1234567895^|^zh-CN^|^429
+cns12351^|^169.254.169.254^|^Bearer eyJhbGciOiJIUzI1^|^2023-04-01T10:30:00Z^|^192.168.1.7^|^fapi1234567896^|^en-HK^|^500
+cns12352^|^169.254.169.254^|^Bearer eyJhbGciOiJIUzI2^|^2023-04-01T10:35:00Z^|^192.168.1.8^|^fapi1234567897^|^zh-HK^|^503
+cns12353^|^169.254.169.254^|^Bearer eyJhbGciOiJIUzI3^|^2023-04-01T10:40:00Z^|^192.168.1.9^|^fapi1234567898^|^zh-CN^|^504
+cns12354^|^169.254.169.254^|^Bearer eyJhbGciOiJIUzI4^|^2023-04-01T10:45:00Z^|^192.168.1.10^|^fapi1234567899^|^en-HK^|^400
