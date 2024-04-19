@@ -14,21 +14,21 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class CommandUnitTest {
 
-    // tests
+	// tests
 
-    @Test
-    public final void whenCommandIsSerialized_thenCorrect() throws JsonProcessingException {
-        new ObjectMapper().writeValueAsString(new CreateLead(randomAlphabetic(6)));
-    }
+	@Test
+	public final void whenCommandIsSerialized_thenCorrect() throws JsonProcessingException {
+		new ObjectMapper().writeValueAsString(new CreateLead(randomAlphabetic(6)));
+	}
 
-    @Test
-    public final void whenCommandIsDeserialized_thenCorrect() throws IOException {
-        final ObjectMapper objectMapper = new ObjectMapper();
-        final CreateLead originalCommand = new CreateLead(randomAlphabetic(6));
-        final String commandAsString = objectMapper.writeValueAsString(originalCommand);
-        final CreateLead command = objectMapper.readValue(commandAsString, CreateLead.class);
+	@Test
+	public final void whenCommandIsDeserialized_thenCorrect() throws IOException {
+		final ObjectMapper objectMapper = new ObjectMapper();
+		final CreateLead originalCommand = new CreateLead(randomAlphabetic(6));
+		final String commandAsString = objectMapper.writeValueAsString(originalCommand);
+		final CreateLead command = objectMapper.readValue(commandAsString, CreateLead.class);
 
-        assertThat(command, equalTo(originalCommand));
-    }
+		assertThat(command, equalTo(originalCommand));
+	}
 
 }

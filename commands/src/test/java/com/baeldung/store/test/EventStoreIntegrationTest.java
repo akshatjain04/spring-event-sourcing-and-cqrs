@@ -22,20 +22,20 @@ import com.baeldung.write.spring.CommandsApp;
 @SpringBootTest(classes = { CommandsApp.class, EventsConfig.class })
 public class EventStoreIntegrationTest {
 
-    @Autowired
-    private EventStore eventStore;
+	@Autowired
+	private EventStore eventStore;
 
-    @Autowired
-    private RawEventRepo rawEventRepo;
+	@Autowired
+	private RawEventRepo rawEventRepo;
 
-    // tests
+	// tests
 
-    @Test
-    public final void whenPersistingLeadCreatedEvent_thenCorrect() {
-        final UUID correlationId = UUID.randomUUID();
-        eventStore.save(new LeadCreated(correlationId, UUID.randomUUID(), randomAlphabetic(8)));
+	@Test
+	public final void whenPersistingLeadCreatedEvent_thenCorrect() {
+		final UUID correlationId = UUID.randomUUID();
+		eventStore.save(new LeadCreated(correlationId, UUID.randomUUID(), randomAlphabetic(8)));
 
-        assertThat(rawEventRepo.findOneByCorrelationId(correlationId), notNullValue());
-    }
+		assertThat(rawEventRepo.findOneByCorrelationId(correlationId), notNullValue());
+	}
 
 }
