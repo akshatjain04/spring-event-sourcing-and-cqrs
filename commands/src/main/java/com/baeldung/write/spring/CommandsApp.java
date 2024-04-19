@@ -13,8 +13,8 @@ import com.baeldung.store.spring.EventsConfig;
 @SpringBootApplication
 public class CommandsApp extends SpringBootServletInitializer {
 
-    public static void main(final String[] args) {
-        new SpringApplicationBuilder().sources(CommandsApp.class, EventsConfig.class).run(args);
-    }
+	public static void main(final String[] args) {
+		new SpringApplicationBuilder().sources(CommandsApp.class, EventsConfig.class).run(args);
+	}
 
 }

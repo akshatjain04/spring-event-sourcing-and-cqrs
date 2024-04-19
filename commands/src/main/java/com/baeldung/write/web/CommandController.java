@@ -20,26 +20,28 @@ import com.baeldung.write.commands.LeadClickOnPromotionalLink;
 @RequestMapping("/commands")
 class CommandController {
 
-    @Autowired
-    private EventStore eventStore;
+	@Autowired
+	private EventStore eventStore;
 
-    //
+	//
 
-    @RequestMapping(value = "/leads", method = RequestMethod.POST)
-    public void crateLead(final @Valid @RequestBody CreateLead createLeadCommand) {
-        final LeadCreated event = new LeadCreated(UUID.randomUUID(), UUID.randomUUID(), createLeadCommand.getName());
+	@RequestMapping(value = "/leads", method = RequestMethod.POST)
+	public void crateLead(final @Valid @RequestBody CreateLead createLeadCommand) {
+		final LeadCreated event = new LeadCreated(UUID.randomUUID(), UUID.randomUUID(), createLeadCommand.getName());
 
-        eventStore.save(event);
-    }
+		eventStore.save(event);
+	}
 
-    @RequestMapping(value = "/leads/activity", method = RequestMethod.POST)
-    public void leadClickOnPromotionalLink(final @Valid @RequestBody LeadClickOnPromotionalLink leadClickOnPromotionalLinkCommand) {
-        final UUID correllationId = UUID.randomUUID();
+	@RequestMapping(value = "/leads/activity", method = RequestMethod.POST)
+	public void leadClickOnPromotionalLink(
+			final @Valid @RequestBody LeadClickOnPromotionalLink leadClickOnPromotionalLinkCommand) {
+		final UUID correllationId = UUID.randomUUID();
 
-        final LeadClickedOnPromotionalLink event = new LeadClickedOnPromotionalLink(leadClickOnPromotionalLinkCommand.getIdOfLead());
-        event.setCorrelationId(correllationId);
+		final LeadClickedOnPromotionalLink event = new LeadClickedOnPromotionalLink(
+				leadClickOnPromotionalLinkCommand.getIdOfLead());
+		event.setCorrelationId(correllationId);
 
-        eventStore.save(event);
-    }
+		eventStore.save(event);
+	}
 
 }

@@ -19,14 +19,14 @@ import com.baeldung.write.spring.CommandsApp;
 @SpringBootTest(classes = { CommandsApp.class, EventsConfig.class })
 public class CommandIntegrationTest {
 
-    @Autowired
-    private ApplicationEventPublisher eventPublisher;
+	@Autowired
+	private ApplicationEventPublisher eventPublisher;
 
-    // tests
+	// tests
 
-    @Test
-    public final void whenPublishingLeadCreatedEvent_thenCorrect() {
-        eventPublisher.publishEvent(new LeadCreated(UUID.randomUUID(), UUID.randomUUID(), randomAlphabetic(8)));
-    }
+	@Test
+	public final void whenPublishingLeadCreatedEvent_thenCorrect() {
+		eventPublisher.publishEvent(new LeadCreated(UUID.randomUUID(), UUID.randomUUID(), randomAlphabetic(8)));
+	}
 
 }
